@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Калькулятор</title>
+</head>
+<body>
+<form id="main-form" onsubmit="return chekForm(this)" method="post">
+	<label for="x">Первое значение:</label>
+	<input type="text" name="x" placeholder="Введите первое значение" id="x"><br><br>
+
+	<label for="y">Второе значение</label>
+	<input type="text" name="y" placeholder="Введите второе значение" id="y"><br><br>
+
+	
+
+	<span>Выберите математическую операцию</span>
+	<input type="radio" name="state" id="summa" value="Сумма">
+	<label for="summ">Сумма</label>
+
+	<input type="radio" name="state" id="raznost" value="Разность">
+	<label for="raznost">Разность</label>
+
+
+
+<input type="radio" name="state" id="pr" value="Произведение">
+	<label for="summ">Произведение</label>
+
+	<input type="radio" name="state" id="d" value="Деление">
+	<label for="raznost">Деление</label>
+
+
+
+
+<br>
+   <div id ="error" style="color: red"></div>
+	<input type="submit" name="submit" value="Готово">
+</form>
+
+<script src="../js/calk.js"></script>
+</body>
+</html>

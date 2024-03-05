@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма задания пароля</title>
+</head>
+<body>
+<form id="main-form" onsubmit="return chekForm(this)" method="post">
+	<label for="name">Имя:</label>
+	<input type="text" name="name" placeholder="Введите имя" id="name"><br><br>
+	<label for="pass"> Введите Пароль</label>
+	<input type="password" name="pass" placeholder="Введите Пароль" id="pass"><br><br>
+	<label for="pass"> Повторите Пароль</label>
+	<input type="password" name="repass" placeholder="Введите Пароль" id="repass"><br><br>
+	<span>Пол</span>
+	<input type="radio" name="state" id="male" value="Мужской">
+	<label for="male">Мужской</label>
+	<input type="radio" name="state" id="famale" value="Женский">
+	<label for="male">Женский</label><br><br>
+   <div id ="error" style="color: red"></div>
+	<input type="submit" name="submit" value="Готово">
+</form>
+
+<script src="../js/form.js"></script>
+</body>
+</html>
